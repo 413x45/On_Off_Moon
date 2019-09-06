@@ -1,0 +1,65 @@
+body {
+    background: linear-gradient(to bottom, #160d2b 0%, #321e61 100%);
+    height: 100vh;
+    width: 100vw;
+}
+
+button {
+    background: lightgray;
+    padding: 10px;
+    margin: 40px;
+    border-radius: 10px;
+    color: #160d2b;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.sky {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+}
+
+.stars-1 {
+height: 2px;
+width: 2px;
+border-radius: 50%;
+background: white;
+position: absolute;
+animation: twinkle 4s linear infinite;
+}
+@keyframes twinkle {
+20% {
+transform: scale(0.5);
+opacity: 0.5;
+}
+40% {
+transform: scale(1);
+}
+80% {
+transform: scale(1.5);
+opacity: 0.75;
+}
+}
+
+.stars-2 {
+height: 2px;
+width: 2px;
+border-radius: 50%;
+background: white;
+position: absolute;
+animation: twinkle-delay 10s linear infinite;
+}
+@keyframes twinkle-delay {
+20% {
+transform: scale(0.5);
+opacity: 0.5;
+}
+40% {
+transform: scale(1);
+}
+80% {
+transform: scale(1.5);
+opacity: 0.75;
+}
+}
